@@ -290,10 +290,21 @@ body{
                     transition: 0.3s ease-in-out;
                     display: flex;
               
-                    
+                    overflow: hidden;
                     justify-content: space-between;
                     flex-direction: column;
 
+                    .bg-video{
+                        width: 100%;
+                        height: 100%;
+
+                        .vd{
+                            width: 1200px;
+                            position: relative;
+                            right: 200px;
+                        
+                        }
+                    }
                     .area-config{
                         width: 40px;
                         height: 40px;
@@ -303,7 +314,7 @@ body{
                         justify-content: center;
                         align-items: center;
                         align-self: flex-end;
-                        
+                        position: absolute;
                         
                         cursor: pointer;
                         
@@ -329,7 +340,7 @@ body{
                         justify-content: center;
                         align-items: center;
                         display: none;
-                        
+                        position: absolute;
                         cursor: pointer;
                         i{
                             color: white;
