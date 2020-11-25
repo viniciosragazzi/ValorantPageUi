@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+@font-face{
+    font-family: "Grold";
+    src: url(../fontes/Grold-Regular.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=DM + Mono&display=swap');
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #c22330;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    main{
+        width: 1200px;
+        height: 600px;
+        display: flex;
+        
+        
+        border-radius: 20px;
+
+            section{
+
+                &.login{
+                    width: 35%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    background-color: #0f1923;
+                    animation: troca 5s infinite;
+                    transition: 0.3s ease-in-out;
+                    left: 100%;
+                    z-index: 1;
+
+                    .area-logo{
+                        position: relative;
+                        bottom: 40px;
+                        img{
+                            width: 100px;
+                            margin-top: 50px;
+                            
+                        }
+                        i{
+                            color: rgb(253, 223, 223);
+                            font-size: 18px;
+                            position: relative;
+                            bottom: 0px;
+                            left: 100px;
+                            
+                            &:hover{
+                                color: #F15B6C;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .area-infos{
+                        display: flex;
+                        justify-content: center;
+                        position: relative;
+                        bottom: 40px;
+                        h3{
+                            font-family: Grold;
+                            color: white;
+                            margin: 25px 0;
+                        }
+                        .form-group{
+                            width: 300px;
+                            
+                            
+                            & input{
+                                
+                                background-color: #2e4257;
+                                border: none;
+                                margin-bottom: 25px;
+                                height: 50px;
+                                color: white;
+                                
+                                &::placeholder{
+                                    font-size: 13px;   
+                                    font-weight: 700;     
+                                    color: rgb(132, 147, 160);      
+                                    position: relative;
+                                    transition: 0.1s;
+                                    bottom: 5px;
+                                    font-family: Grold;
+                                    
+                                                       
+                                }
+
+                                &:focus{
+                                    font-size: 12px;
+                                        &::placeholder{
+                                            color: rgb(211, 217, 223);   
+                                            font-size: 10px;
+                                            bottom: 15px;
+                                            padding-bottom: 405px;
+                                            padding: 10px;
+                                            
+                                        }
+                                }
+                            }
+                        }
+                        .redes{
+                            button{
+                                width: 90px;
+                                margin-left: 5px;
+                                i{
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+
+                    }
+                    .manterl{
+                        text-align: start;
+                        padding: 10px;
+
+                        input{
+                            border: none;
+                            background-color: rgb(218, 255, 250);
+                        }
+
+                        label{
+                            color: rgb(132, 147, 160); 
+                            font-weight: 700;
+                        }
+                    }
+                    .area-inferior{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        i{
+                            position: relative;
+                            bottom: 30px;
+                            color: white;
+                            font-size: 60px;
+                            &:hover{
+                                color: rgb(252, 228, 228);
+                                cursor: pointer;                              
+                            }
+                        }
+                        .area-regis{
+                            display: flex;
+                            align-items: center;
+                            p{
+                                color: white;
+                                padding-top: 5px;
+                                margin-top: 10px;
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                   
+                }
+                &.registro{
+                    width: 400px;
+                    height: 500px;
+                    display: flex;
+                    margin-left: 400px;
+                    flex-direction: column;
+                    text-align: center;
+                    background-color: #0f1923;
+                    animation: troca 5s infinite;
+                    transition: 0.3s ease-in-out;
+                    
+                    background-color: rgb(255, 255, 255);
+                    position: absolute;
+                    z-index: 2;
+
+                    .area-logo{
+                        position: relative;
+                        bottom: 40px;
+                        img{
+                            width: 100px;
+                            margin-top: 50px;
+                            
+                        }
+                        i{
+                            color: rgb(253, 223, 223);
+                            font-size: 18px;
+                            position: relative;
+                            bottom: 0px;
+                            left: 100px;
+                            
+                            &:hover{
+                                color: #F15B6C;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .area-infos{
+                        display: flex;
+                        justify-content: center;
+                        position: relative;
+                        bottom: 40px;
+                        h3{
+                            font-family: Grold;
+                            color: white;
+                            margin: 25px 0;
+                        }
+                        .form-group{
+                            width: 300px;
+                            
+                            
+                            & input{
+                                
+                                background-color: #2e4257;
+                                border: none;
+                                margin-bottom: 25px;
+                                height: 50px;
+                                color: white;
+                                
+                                &::placeholder{
+                                    font-size: 13px;   
+                                    font-weight: 700;     
+                                    color: rgb(132, 147, 160);      
+                                    position: relative;
+                                    transition: 0.1s;
+                                    bottom: 5px;
+                                    font-family: Grold;
+                                    
+                                                       
+                                }
+
+                                &:focus{
+                                    font-size: 12px;
+                                        &::placeholder{
+                                            color: rgb(211, 217, 223);   
+                                            font-size: 10px;
+                                            bottom: 15px;
+                                            padding-bottom: 405px;
+                                            padding: 10px;
+                                            
+                                        }
+                                }
+                            }
+                        }
+                        .redes{
+                            button{
+                                width: 90px;
+                                margin-left: 5px;
+                                i{
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+
+                    }
+                 .criar{
+                     font-family: Grold;
+                     margin-bottom: 20px;
+                 }
+                 .area-inferior{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+                   
+                    .area-regis{
+                        display: flex;
+                        align-items: center;
+                        margin-top: -20px;
+                        
+                        p{
+                            color: white;
+                            padding-top: 5px;
+                            margin-top: 10px;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+                }
+                &.back{
+                    width: 70%;
+                    height: 100%;
+                    background: url(../imagens/convert.gif);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    z-index: 3;
+                    transition: 0.3s ease-in-out;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+
+                    .area-config{
+                        width: 40px;
+                        height: 40px;
+                        background-color:#202D3A ;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        cursor: pointer;
+                         i{
+                             color: #F32D3D;
+                             cursor: pointer;
+
+                         }
+                         &:hover{
+                            background-color:#0b121a ;
+                            
+                             i{
+                                color: #960713;
+                             }
+                         }
+                    }
+                   
+                }
+            }
+    
+    }
+    
+}
+.toggleMenu {
+    margin-left: 0px !important;
+}
+@keyframes troca{
+    0%{
+        background-color: #0f1923;
+    }
+    50%{
+        background-color: #202d3a;
+    }
+    100%{
+        background-color: #0f1923;
+    }
+}

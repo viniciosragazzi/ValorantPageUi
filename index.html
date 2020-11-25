@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>VALORANT- Login</title>
+  </head>
+  <body>
+    <main>
+        <section class="login">
+            <div class="area-logo">
+                <img src="imagens/valorant-logo.png" >
+                <i class="fas fa-question-circle"></i>
+            </div>
+            <div class="area-infos">
+                <form class="f">
+                    <h3>Fazer Login</h3>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="NOME DE USUARIO">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="SENHA">
+                      </div>
+
+                    <div class="redes">
+                        <button class="btn btn-primary"><i class="fab fa-facebook"></i></button>
+                        <button class="btn btn-light"><i class="fab fa-google"></i></button>
+                        <button class="btn btn-dark"><i class="fab fa-apple"></i></button>
+                    </div>
+                    <div class="manterl">
+                        <input type="checkbox" name="ml" id="ml">
+                        <label for="ml">Manter login</label>
+                    </div>
+                </form>
+            </div>
+            <div class="area-inferior">
+                
+                    <i onclick="entrar()" class="fas fa-arrow-circle-right"></i>
+                    <div class="area-regis">
+                        <p>Não tem uma conta?</p>
+                        <button class="btn btn-danger" id="registrar" onclick="regis()"> Criar uma</button>
+                    </div>
+            </div>
+        </section>
+      
+        <section class="back">
+                <div class="area-config">
+                    <i  class="fas fa-sliders-h"></i>
+                </div>
+                
+        </section>
+
+        <section  class="registro">
+            <div class="area-logo">
+                <img src="imagens/valorant-logo.png" >
+                <i class="fas fa-question-circle"></i>
+            </div>
+            <div class="area-infos">
+                <form class="f">
+                    <h3>Criar conta</h3>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="NOME DE USUARIO">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="EMAIL">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="SENHA">
+                      </div>
+                      
+                      <button class=" criar btn btn-primary" >CRIAR CONTA</button>
+
+                      
+                    <div class="redes">
+                        <button class="btn btn-primary"><i class="fab fa-facebook"></i></button>
+                        <button class="btn btn-light"><i class="fab fa-google"></i></button>
+                        <button class="btn btn-dark"><i class="fab fa-apple"></i></button>
+                    </div>
+                    
+                </form>
+            </div>
+
+            <div class="area-inferior">
+                
+                <div class="area-regis">
+                    <p>Ja tem uma conta?</p>
+                    <button class="btn btn-danger" onclick="logar()"> Logar</button>
+                </div>
+        </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

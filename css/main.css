@@ -1,0 +1,538 @@
+@import url("https://fonts.googleapis.com/css2?family=DM + Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Grold";
+  src: url(../fontes/Grold-Regular.otf);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #c22330;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body main {
+  width: 1200px;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+}
+
+body main section.login {
+  width: 35%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: #0f1923;
+  -webkit-animation: troca 5s infinite;
+          animation: troca 5s infinite;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  left: 100%;
+  z-index: 1;
+}
+
+body main section.login .area-logo {
+  position: relative;
+  bottom: 40px;
+}
+
+body main section.login .area-logo img {
+  width: 100px;
+  margin-top: 50px;
+}
+
+body main section.login .area-logo i {
+  color: #fddfdf;
+  font-size: 18px;
+  position: relative;
+  bottom: 0px;
+  left: 100px;
+}
+
+body main section.login .area-logo i:hover {
+  color: #F15B6C;
+  cursor: pointer;
+}
+
+body main section.login .area-infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  bottom: 40px;
+}
+
+body main section.login .area-infos h3 {
+  font-family: Grold;
+  color: white;
+  margin: 25px 0;
+}
+
+body main section.login .area-infos .form-group {
+  width: 300px;
+}
+
+body main section.login .area-infos .form-group input {
+  background-color: #2e4257;
+  border: none;
+  margin-bottom: 25px;
+  height: 50px;
+  color: white;
+}
+
+body main section.login .area-infos .form-group input::-webkit-input-placeholder {
+  font-size: 13px;
+  font-weight: 700;
+  color: #8493a0;
+  position: relative;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  bottom: 5px;
+  font-family: Grold;
+}
+
+body main section.login .area-infos .form-group input:-ms-input-placeholder {
+  font-size: 13px;
+  font-weight: 700;
+  color: #8493a0;
+  position: relative;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  bottom: 5px;
+  font-family: Grold;
+}
+
+body main section.login .area-infos .form-group input::-ms-input-placeholder {
+  font-size: 13px;
+  font-weight: 700;
+  color: #8493a0;
+  position: relative;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  bottom: 5px;
+  font-family: Grold;
+}
+
+body main section.login .area-infos .form-group input::placeholder {
+  font-size: 13px;
+  font-weight: 700;
+  color: #8493a0;
+  position: relative;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  bottom: 5px;
+  font-family: Grold;
+}
+
+body main section.login .area-infos .form-group input:focus {
+  font-size: 12px;
+}
+
+body main section.login .area-infos .form-group input:focus::-webkit-input-placeholder {
+  color: #d3d9df;
+  font-size: 10px;
+  bottom: 15px;
+  padding-bottom: 405px;
+  padding: 10px;
+}
+
+body main section.login .area-infos .form-group input:focus:-ms-input-placeholder {
+  color: #d3d9df;
+  font-size: 10px;
+  bottom: 15px;
+  padding-bottom: 405px;
+  padding: 10px;
+}
+
+body main section.login .area-infos .form-group input:focus::-ms-input-placeholder {
+  color: #d3d9df;
+  font-size: 10px;
+  bottom: 15px;
+  padding-bottom: 405px;
+  padding: 10px;
+}
+
+body main section.login .area-infos .form-group input:focus::placeholder {
+  color: #d3d9df;
+  font-size: 10px;
+  bottom: 15px;
+  padding-bottom: 405px;
+  padding: 10px;
+}
+
+body main section.login .area-infos .redes button {
+  width: 90px;
+  margin-left: 5px;
+}
+
+body main section.login .area-infos .redes button i {
+  font-size: 20px;
+}
+
+body main section.login .manterl {
+  text-align: start;
+  padding: 10px;
+}
+
+body main section.login .manterl input {
+  border: none;
+  background-color: #dafffa;
+}
+
+body main section.login .manterl label {
+  color: #8493a0;
+  font-weight: 700;
+}
+
+body main section.login .area-inferior {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section.login .area-inferior i {
+  position: relative;
+  bottom: 30px;
+  color: white;
+  font-size: 60px;
+}
+
+body main section.login .area-inferior i:hover {
+  color: #fce4e4;
+  cursor: pointer;
+}
+
+body main section.login .area-inferior .area-regis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section.login .area-inferior .area-regis p {
+  color: white;
+  padding-top: 5px;
+  margin-top: 10px;
+  padding-right: 10px;
+}
+
+body main section.registro {
+  width: 400px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 400px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: #0f1923;
+  -webkit-animation: troca 5s infinite;
+          animation: troca 5s infinite;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+}
+
+body main section.registro .area-logo {
+  position: relative;
+  bottom: 40px;
+}
+
+body main section.registro .area-logo img {
+  width: 100px;
+  margin-top: 50px;
+}
+
+body main section.registro .area-logo i {
+  color: #fddfdf;
+  font-size: 18px;
+  position: relative;
+  bottom: 0px;
+  left: 100px;
+}
+
+body main section.registro .area-logo i:hover {
+  color: #F15B6C;
+  cursor: pointer;
+}
+
+body main section.registro .area-infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  bottom: 40px;
+}
+
+body main section.registro .area-infos h3 {
+  font-family: Grold;
+  color: white;
+  margin: 25px 0;
+}
+
+body main section.registro .area-infos .form-group {
+  width: 300px;
+}
+
+body main section.registro .area-infos .form-group input {
+  background-color: #2e4257;
+  border: none;
+  margin-bottom: 25px;
+  height: 50px;
+  color: white;
+}
+
+body main section.registro .area-infos .form-group input::-webkit-input-placeholder {
+  font-size: 13px;
+  font-weight: 700;
+  color: #8493a0;
+  position: relative;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  bottom: 5px;
+  font-family: Grold;
+}
+
+body main section.registro .area-infos .form-group input:-ms-input-placeholder {
+  font-size: 13px;
+  font-weight: 700;
+  color: #8493a0;
+  position: relative;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  bottom: 5px;
+  font-family: Grold;
+}
+
+body main section.registro .area-infos .form-group input::-ms-input-placeholder {
+  font-size: 13px;
+  font-weight: 700;
+  color: #8493a0;
+  position: relative;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  bottom: 5px;
+  font-family: Grold;
+}
+
+body main section.registro .area-infos .form-group input::placeholder {
+  font-size: 13px;
+  font-weight: 700;
+  color: #8493a0;
+  position: relative;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  bottom: 5px;
+  font-family: Grold;
+}
+
+body main section.registro .area-infos .form-group input:focus {
+  font-size: 12px;
+}
+
+body main section.registro .area-infos .form-group input:focus::-webkit-input-placeholder {
+  color: #d3d9df;
+  font-size: 10px;
+  bottom: 15px;
+  padding-bottom: 405px;
+  padding: 10px;
+}
+
+body main section.registro .area-infos .form-group input:focus:-ms-input-placeholder {
+  color: #d3d9df;
+  font-size: 10px;
+  bottom: 15px;
+  padding-bottom: 405px;
+  padding: 10px;
+}
+
+body main section.registro .area-infos .form-group input:focus::-ms-input-placeholder {
+  color: #d3d9df;
+  font-size: 10px;
+  bottom: 15px;
+  padding-bottom: 405px;
+  padding: 10px;
+}
+
+body main section.registro .area-infos .form-group input:focus::placeholder {
+  color: #d3d9df;
+  font-size: 10px;
+  bottom: 15px;
+  padding-bottom: 405px;
+  padding: 10px;
+}
+
+body main section.registro .area-infos .redes button {
+  width: 90px;
+  margin-left: 5px;
+}
+
+body main section.registro .area-infos .redes button i {
+  font-size: 20px;
+}
+
+body main section.registro .criar {
+  font-family: Grold;
+  margin-bottom: 20px;
+}
+
+body main section.registro .area-inferior {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section.registro .area-inferior .area-regis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -20px;
+}
+
+body main section.registro .area-inferior .area-regis p {
+  color: white;
+  padding-top: 5px;
+  margin-top: 10px;
+  padding-right: 10px;
+}
+
+body main section.back {
+  width: 70%;
+  height: 100%;
+  background: url(../imagens/convert.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 3;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body main section.back .area-config {
+  width: 40px;
+  height: 40px;
+  background-color: #202D3A;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+body main section.back .area-config i {
+  color: #F32D3D;
+  cursor: pointer;
+}
+
+body main section.back .area-config:hover {
+  background-color: #0b121a;
+}
+
+body main section.back .area-config:hover i {
+  color: #960713;
+}
+
+.toggleMenu {
+  margin-left: 0px !important;
+}
+
+@-webkit-keyframes troca {
+  0% {
+    background-color: #0f1923;
+  }
+  50% {
+    background-color: #202d3a;
+  }
+  100% {
+    background-color: #0f1923;
+  }
+}
+
+@keyframes troca {
+  0% {
+    background-color: #0f1923;
+  }
+  50% {
+    background-color: #202d3a;
+  }
+  100% {
+    background-color: #0f1923;
+  }
+}
+/*# sourceMappingURL=main.css.map */
