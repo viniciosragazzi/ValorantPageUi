@@ -470,12 +470,13 @@ body main section.back {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body main section.back .area-config {
@@ -492,6 +493,8 @@ body main section.back .area-config {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   cursor: pointer;
 }
 
@@ -506,6 +509,28 @@ body main section.back .area-config:hover {
 
 body main section.back .area-config:hover i {
   color: #960713;
+}
+
+body main section.back .voltar {
+  width: 40px;
+  height: 40px;
+  background-color: #202D3A;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  cursor: pointer;
+}
+
+body main section.back .voltar i {
+  color: white;
 }
 
 .toggleMenu {

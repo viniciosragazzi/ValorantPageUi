@@ -1,6 +1,7 @@
 let lg = document.querySelector(".login");
 let regi = document.querySelector(".registro");
 let back = document.querySelector(".back");
+let voltar = document.querySelector(".voltar");
 function regis(){
    
     regi.style.marginLeft = '0px';
@@ -26,5 +27,14 @@ function logar(){
 
 function entrar(){
     lg.style.display = 'none'
+    voltar.style.display = 'flex'
+    regi.style.Marginleft = '800px'
     back.style.width = '100%';
+    
+}
+function vt(){
+    lg.style.display = 'flex'
+    voltar.style.display = 'none'
+    regi.style.Marginleft = '800px'
+    back.style.width = '70%';
 }

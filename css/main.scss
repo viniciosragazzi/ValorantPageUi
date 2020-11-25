@@ -289,8 +289,10 @@ body{
                     z-index: 3;
                     transition: 0.3s ease-in-out;
                     display: flex;
-                    align-items: flex-end;
-                    justify-content: flex-end;
+              
+                    
+                    justify-content: space-between;
+                    flex-direction: column;
 
                     .area-config{
                         width: 40px;
@@ -300,8 +302,11 @@ body{
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        align-self: flex-end;
+                        
                         
                         cursor: pointer;
+                        
                          i{
                              color: #F32D3D;
                              cursor: pointer;
@@ -314,6 +319,21 @@ body{
                                 color: #960713;
                              }
                          }
+                    }
+                    .voltar{
+                        width: 40px;
+                        height: 40px;
+                        background-color:#202D3A ;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        display: none;
+                        
+                        cursor: pointer;
+                        i{
+                            color: white;
+                        }
                     }
                    
                 }
