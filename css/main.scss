@@ -4,9 +4,14 @@
     box-sizing: border-box;
 
 }
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
 @font-face{
     font-family: "Grold";
     src: url(../fontes/Grold-Regular.otf);
+}
+@font-face{
+    font-family: "Valorant";
+    src: url(../fontes/ValorantFont.ttf);
 }
 @import url('https://fonts.googleapis.com/css2?family=DM + Mono&display=swap');
 body{
@@ -42,6 +47,8 @@ body{
                     .area-logo{
                         position: relative;
                         bottom: 40px;
+
+                   
                         img{
                             width: 100px;
                             margin-top: 50px;
@@ -297,11 +304,13 @@ body{
                     .bg-video{
                         width: 100%;
                         height: 100%;
+                        transition: 0.3s ease-in-out;
 
                         .vd{
                             width: 1200px;
                             position: relative;
                             right: 200px;
+                            transition: 0.3s ease-in-out;
                         
                         }
                     }
@@ -341,9 +350,43 @@ body{
                         align-items: center;
                         display: none;
                         position: absolute;
+                        z-index: 999;
                         cursor: pointer;
                         i{
                             color: white;
+                            z-index: 999;
+                        }
+                    }
+
+                    .iniciar-bg{
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        display: none;
+                        transition: 1s;
+
+                        .text{
+                            h1{
+                                font-size: 200px;
+                                margin-left: 156px;
+                                margin-top: 189px;
+                                animation: surgir 3s , pulsar 5s infinite ;
+                                color:#ffffff ;
+                                font-family: Valorant;
+
+                                &:hover{
+                                    color:#ff8b8b ;
+                                    cursor: pointer;
+                                }
+                               
+                                &:after {
+                                    font-family: "Font Awesome 5 Brands";
+                                    font-weight: 400;
+                                    content: "\f167";
+                                    color: #cccfe9;
+                                  }
+                            }
                         }
                     }
                    
@@ -366,4 +409,33 @@ body{
     100%{
         background-color: #0f1923;
     }
+}
+
+@keyframes surgir{
+  
+    0%{
+        display: block;
+        opacity: 0;
+    }
+    
+    100%{
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes pulsar {
+    0%{
+        font-size:200px ;
+    }
+    50%{
+        
+            font-size:203px ;
+        
+    }
+    100%{
+        
+        font-size:200px ;
+    
+}
 }

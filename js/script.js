@@ -3,6 +3,7 @@ let regi = document.querySelector(".registro");
 let back = document.querySelector(".back");
 let voltar = document.querySelector(".voltar");
 let vid = document.querySelector(".vd");
+let iniciar = document.querySelector(".iniciar-bg");
 function regis(){
    
     regi.style.marginLeft = '0px';
@@ -29,10 +30,12 @@ function logar(){
 function entrar(){
     lg.style.display = 'none'
     voltar.style.display = 'flex'
-    regi.style.Marginleft = '800px'
+    regi.style.Marginleft = '900px'
     back.style.width = '100%';
     vid.style.right = '0';
-    
+    iniciar.style.display = 'block';
+    vid.style.filter = "blur(5px)";
+    regi.style.display = 'none'
 }
 function vt(){
     lg.style.display = 'flex'
@@ -40,4 +43,9 @@ function vt(){
     regi.style.Marginleft = '800px'
     back.style.width = '70%';
     vid.style.right = '200px';
+    iniciar.style.display = 'none';
+    vid.style.filter = "blur(0)";
+    regi.style.display = 'flex'
+    
+    
 }
