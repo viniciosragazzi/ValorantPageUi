@@ -977,12 +977,98 @@ body main section.tela-game .config p.configu {
 
 body main section.tela-game .rank {
   width: 300px;
-  height: 50px;
+  height: 300px;
   position: absolute;
-  top: 130px;
-  left: 200px;
-  background-color: #541179;
+  top: 180px;
+  display: none;
+  right: -250px;
+  overflow: hidden;
+  -webkit-animation: surgir 1s;
+          animation: surgir 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+  background-color: #34044e79;
   z-index: 9999;
+}
+
+body main section.tela-game .rank img {
+  width: 140px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body main section.tela-game .rank p {
+  color: white;
+  font-weight: 600;
+}
+
+body main section.tela-game .rank .rank-fechado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #300349;
+  justify-items: center;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+
+body main section.tela-game .rank .rank-fechado img {
+  width: 40px;
+  height: 40px;
+  margin-left: 0px;
+  margin-bottom: 5px;
+}
+
+body main section.tela-game .rank .rank-fechado h1 {
+  color: white;
+  font-family: Valorant;
+  padding-top: 8px;
+  padding-left: 15px;
+  font-size: 35px;
+}
+
+body main section.tela-game .rank .proximo-rank {
+  width: 100%;
+  height: 80px;
+  background-color: #4f056e;
+  margin-top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main section.tela-game .rank .proximo-rank img {
+  width: 50px;
+  margin-left: 15px;
+}
+
+body main section.tela-game .rank-img {
+  position: absolute;
+  z-index: 9999;
+  top: 250px;
+  right: 250px;
+}
+
+body main section.tela-game .rank-img img {
+  width: 100px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+body main section.tela-game .rank-img img.img-rank {
+  width: 50px;
+  position: relative;
+  bottom: 133px;
+  right: -16px;
+  display: none;
 }
 
 .toggleMenu {

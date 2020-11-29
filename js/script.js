@@ -20,7 +20,9 @@ let nc = document.querySelector(".nome-chat")
 let con = document.querySelector(".config")
 let arealogo2 = document.querySelector(".area-logo2")
 let arealogom = document.querySelector(".area-logom")
-
+let rank = document.querySelector(".rank")
+let imgg = document.querySelector(".imgrank")
+let rankimg = document.querySelector(".img-rank")
 
 function regis(){
    
@@ -88,6 +90,10 @@ function clicksocial(){
     ptexto.style.display = "none";
     picon.style.display = "flex"
     socialL.style.display = "flex"
+    imgg.style.display = "block";
+    rankimg.style.display = "none"
+    rank.style.display = 'none'
+    rank.style.transform = "translateX(400px)"
 }
 
 function fecharsocial(){
@@ -125,4 +131,25 @@ function fecharConfig(){
     con.style.transform = "translateY(-90px)"
     arealogom.style.display = "flex"
     arealogo2.style.display = "none"
+}
+
+function mostrarRank(){
+    imgg.style.display = "none";
+    rankimg.style.display = "block"
+    rank.style.display = 'flex'
+    rank.style.transform = "translateX(-400px)"
+    socialL.style.transform = "translateY(0)";
+    socialL.style.width = "100px"; 
+    socialL.style.height = "40px"; 
+    ptexto.style.display = "flex";
+    picon.style.display = "none"
+    icos.style.paddingTop="12px"
+    socialL.style.display = "none"
+}
+
+function esconderRank(){
+    imgg.style.display = "block";
+    rankimg.style.display = "none"
+    rank.style.display = 'none'
+    rank.style.transform = "translateX(400px)"
 }

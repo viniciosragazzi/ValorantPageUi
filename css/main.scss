@@ -721,12 +721,83 @@ body  {
                     }
                     .rank{
                         width: 300px;
-                        height: 50px;
+                        height: 300px;
                         position: absolute;
-                        top: 130px;
-                        left: 200px;
-                        background-color:#541179 ;
+                        top: 180px;
+                        display: none;
+                       
+                        right:-250px;
+                        overflow: hidden;
+                        animation: surgir 1s;
+                        transition: 0.5s;
+                        flex-direction: column;
+                        border-radius: 5px;
+                        background-color:#34044e79 ;
+                        
                         z-index: 9999;
+                        img{
+                            width: 140px;
+                            align-self: center;
+                            
+                        }
+                        p{
+                            color: white;
+                            font-weight: 600;
+                        }
+                           .rank-fechado{
+                               display: flex;
+                               background-color:#300349 ;
+                               justify-items: center;
+                               padding-left: 20px;
+                               border-radius: 5px;
+                            img{
+                                width: 40px;
+                                height: 40px;
+                                margin-left: 0px;
+                                margin-bottom:5px;
+
+                            }
+                            h1{
+                                color: white;
+                                font-family: Valorant;
+                                padding-top: 8px;
+                                padding-left: 15px;
+                                font-size: 35px;
+                            }
+                           }
+                        .proximo-rank{
+                            width: 100%;
+                            height: 80px;
+                            background-color: #4f056e;
+                            margin-top:0px;
+                            display: flex;
+                            justify-content: space-around;
+
+                            img{
+                                width: 50px;
+                                margin-left: 15px;
+                            }
+                        }
+                    }
+                    .rank-img{
+                        position: absolute;
+                        z-index: 9999;
+                        top: 250px;
+                        right: 250px;
+                        
+                        img{
+                            width: 100px;
+                            margin-right: 50px;
+                            cursor: pointer;
+
+                        &.img-rank{
+                            width: 50px;
+                            position: relative;
+                            bottom: 133px;
+                            right: -16px;
+                            display: none;
+                        }
+                        }
                     }
                 }
             }
@@ -777,6 +848,7 @@ body  {
         font-size:200px ;
     
 }
+
 }
 
 #social-check:checked  * .social-lateral{
