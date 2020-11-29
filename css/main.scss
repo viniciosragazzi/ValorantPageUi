@@ -691,8 +691,8 @@ body  {
                         width: 200px;
                         height: 80px;
                         background-color: #5A0790;
-                        position: absolute;
-                        top: -5px;
+                        position: fixed;
+                        top: -12px;
                        
                         display: none;
                         left: 105px;
@@ -722,8 +722,8 @@ body  {
                     .rank{
                         width: 300px;
                         height: 300px;
-                        position: absolute;
-                        top: 180px;
+                        position: fixed;
+                        top: 237px;
                         display: none;
                        
                         right:-250px;
@@ -789,12 +789,14 @@ body  {
                             width: 100px;
                             margin-right: 50px;
                             cursor: pointer;
+                            animation:  surgir 2s;
 
                         &.img-rank{
                             width: 50px;
-                            position: relative;
-                            bottom: 133px;
-                            right: -16px;
+                            position: fixed;
+                            top:  166px;
+                            right: 236px;
+                            animation:  surgir 2s;
                             display: none;
                         }
                         }
@@ -851,7 +853,14 @@ body  {
 
 }
 
-#social-check:checked  * .social-lateral{
-    background-color: #960713;;
+@media all and (display-mode: fullscreen) {
+    body main section.tela-game .chat {
+ 
+        bottom: 84px;
+      
+    }
+    body main section.tela-game .config {
+        
+        top: 40px;
+    }
 }
-  

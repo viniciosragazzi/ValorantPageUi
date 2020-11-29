@@ -940,8 +940,8 @@ body main section.tela-game .config {
   width: 200px;
   height: 80px;
   background-color: #5A0790;
-  position: absolute;
-  top: -5px;
+  position: fixed;
+  top: -12px;
   display: none;
   left: 105px;
   z-index: 9999;
@@ -978,8 +978,8 @@ body main section.tela-game .config p.configu {
 body main section.tela-game .rank {
   width: 300px;
   height: 300px;
-  position: absolute;
-  top: 180px;
+  position: fixed;
+  top: 237px;
   display: none;
   right: -250px;
   overflow: hidden;
@@ -1061,13 +1061,17 @@ body main section.tela-game .rank-img img {
   width: 100px;
   margin-right: 50px;
   cursor: pointer;
+  -webkit-animation: surgir 2s;
+          animation: surgir 2s;
 }
 
 body main section.tela-game .rank-img img.img-rank {
   width: 50px;
-  position: relative;
-  bottom: 133px;
-  right: -16px;
+  position: fixed;
+  top: 166px;
+  right: 236px;
+  -webkit-animation: surgir 2s;
+          animation: surgir 2s;
   display: none;
 }
 
@@ -1145,7 +1149,12 @@ body main section.tela-game .rank-img img.img-rank {
   }
 }
 
-#social-check:checked * .social-lateral {
-  background-color: #960713;
+@media all and (display-mode: fullscreen) {
+  body main section.tela-game .chat {
+    bottom: 84px;
+  }
+  body main section.tela-game .config {
+    top: 40px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
