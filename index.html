@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>VALORANT- Login</title>
   </head>
-  <body>
+  <body class="corpo">
     <main>
-        <section class="login">
+        <section class=" d-none login">
             <div class="area-logo">
                 <img src="imagens/valorant-logo.png" >
                 <i class="fas fa-question-circle"></i>
@@ -23,10 +23,10 @@
                 <form class="f">
                     <h3>Fazer Login</h3>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="NOME DE USUARIO">
+                        <input type="email" class="form-control" class="exampleInputEmail1" aria-describedby="emailHelp" placeholder="NOME DE USUARIO">
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="SENHA">
+                        <input type="password" class="form-control" class="exampleInputPassword1" placeholder="SENHA">
                       </div>
 
                     <div class="redes">
@@ -50,9 +50,10 @@
             </div>
         </section>
       
-        <section class="back">
+        <section class=" d-none  back">
             <div class="bg-video">
-                <video loop autoplay class="vd" >
+                <video muted loop autoplay controls
+                class="vd" >
                     <source src="imagens/aa.mp4" type="video/mp4" >
                 </video>
             </div>
@@ -64,14 +65,15 @@
                     <i  class="fas fa-sign-out-alt"></i>
                 </div>
                 
-                <div class="iniciar-bg">
+                <div onclick="clickJogar()" class="iniciar-bg">
                         <div class="text" >
                             <h1>JOGAR</h1>
                         </div>
+                       
                 </div>
         </section>
 
-        <section  class="registro">
+        <section  class=" d-none  registro">
             <div class="area-logo">
                 <img src="imagens/valorant-logo.png" >
                 <i class="fas fa-question-circle"></i>
@@ -80,13 +82,13 @@
                 <form class="f">
                     <h3>Criar conta</h3>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="NOME DE USUARIO">
+                        <input type="text" class="form-control" class="exampleInputEmail1" aria-describedby="emailHelp" placeholder="NOME DE USUARIO">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="EMAIL">
+                        <input type="email" class="form-control" class="exampleInputEmail1" aria-describedby="emailHelp" placeholder="EMAIL">
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="SENHA">
+                        <input type="password" class="form-control" class="exampleInputPassword1" placeholder="SENHA">
                       </div>
                       
                       <button class=" criar btn btn-primary" >CRIAR CONTA</button>
@@ -108,6 +110,151 @@
                     <button class="btn btn-danger" onclick="logar()"> Logar</button>
                 </div>
         </div>
+        </section>
+
+        <section class="tela-game">
+            <header>
+                <div onclick="clickLogo()" class="area-logom">
+                    <img src="imagens/logo-topo-config.png" alt="">
+                </div>
+                <div onclick="fecharConfig()" class="area-logo2">
+                    <img src="imagens/logo-topo-config.png" alt="">
+                </div>
+                <nav class="area-menu ">
+                    <ul class="ul-menu">
+                        <li class="menu-item"><a class="menu-link" href="">INÍCIO</a></li>
+                        <li class="menu-item"><a class="menu-link" href="">COLEÇÃO</a></li>
+                        <li class="menu-item jogar skew"><a class="menu-link" href="">JOGAR</a></li>
+                        <li class="menu-item"><a class="menu-link" href="">CARREIRA</a></li>
+                        <li class="menu-item"><a class="menu-link" href="">LOJA</a></li>
+                    </ul>
+                </nav>
+                <div class="area-dinheiro ">
+                    <p class="din-pago"><img src="imagens/Valorant_Points.png" alt=""> 9999</p>
+                    <p class="din-game"> <img src="imagens/Radianite_Points.png" alt=""> 9999</p>
+                </div>
+               
+                <div onclick="clicksocial()" class="area-social">
+                    <p class="pp " > <i class="fas fa-users icos"></i>SOCIAL</p>  
+                </div>
+                <div onclick="fecharsocial()" class="area-social">
+                    <p class="pp2" > <i class="fas fa-window-close"></i></p>
+                    
+                    
+                </div>
+                
+                
+            </header>
+            <div  class="social-lateral">
+                <div class="area-usuario prin">
+                    <div class="area-foto-usuario">
+                        <img src="imagens/perfil5.png" alt="">
+                    </div>
+                    <div class="info-usuario">
+                            <p class="nome-pessoa">MrGazin</p>
+                            <p class="status-pessoa dp"><i class="fas fa-circle"></i>DISPONIVEL</p>
+                    </div>
+                </div>
+                <p class="divisao"><span>3</span> AMIGOS <i class="fas fa-chevron-circle-down"></i></p>
+                <div class="area-usuario">
+                    <div class="area-foto-usuario">
+                        <img src="imagens/lol.png" style="width: 40px; height: 40px;" alt="">
+                    </div>
+                    <div class="info-usuario">
+                            <p class="nome-pessoa">LoWerPath</p>
+                            <p class="status-pessoa np"><i class="fas fa-times-circle"></i>NÃO PERTUBE</p>
+                    </div>
+                </div>
+                <div class="area-usuario">
+                    <div class="area-foto-usuario">
+                        <img src="imagens/perfil3.png" alt="">
+                    </div>
+                    <div class="info-usuario">
+                            <p class="nome-pessoa">Jotinha54</p>
+                            <p class="status-pessoa oc"><i class="fas fa-stop-circle"></i>OCULPADO</p>
+                    </div>
+                </div>
+                <div class="area-usuario">
+                    <div class="area-foto-usuario">
+                        <img src="imagens/perfil2.png" alt="">
+                    </div>
+                    <div class="info-usuario">
+                            <p class="nome-pessoa">Number1an</p>
+                            <p class="status-pessoa dp"><i class="fas fa-circle"></i>DISPONIVEL</p>
+                    </div>
+                </div>
+                
+                <p class="divisao2"><span>2 </span> OUTROS JOGOS <i class="fas fa-chevron-circle-down"></i></p>
+                
+                <div class="area-usuario">
+                    <div class="area-foto-usuario">
+                        <img src="imagens/perfil1.png" alt="">
+                    </div>
+                    <div class="info-usuario">
+                            <p class="nome-pessoa">LastUser</p>
+                            <p class="status-pessoa oc"><i class="fas fa-stop-circle"></i>OCULPADO</p>
+                    </div>
+                </div>
+                <div class="area-usuario">
+                    <div class="area-foto-usuario">
+                        <img src="imagens/perfil1.png" alt="">
+                    </div>
+                    <div class="info-usuario">
+                            <p class="nome-pessoa">AloneMan</p>
+                            <p class="status-pessoa np"><i class="fas fa-times-circle"></i>NÃO PERTUBE</p>
+                    </div>
+                </div>
+                <p class="divisao2"><span>2 </span> INDISPONIVEIS <i class="fas fa-chevron-circle-down"></i></p>
+                <div class="area-usuario">
+                    <div class="area-foto-usuario">
+                        <img src="imagens/perfil2.png" alt="">
+                    </div>
+                    <div class="info-usuario">
+                            <p class="nome-pessoa">matadordegalinha123</p>
+                            <p class="status-pessoa in"><i class="fas fa-dot-circle"></i>INDISPONIVEL</p>
+                    </div>
+                </div>
+                <div class="area-usuario">
+                    <div class="area-foto-usuario">
+                        <img src="imagens/perfil4.png" alt="">
+                    </div>
+                    <div class="info-usuario">
+                            <p class="nome-pessoa">SrBoz</p>
+                            <p class="status-pessoa in"><i class="fas fa-dot-circle"></i>INDISPONIVEL</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat" >
+            <div class="nome-chat" onclick="clickChat()">
+
+                    <p>GRUPO:</p>
+                <i  class="fas down fa-chevron-circle-down"></i>
+                
+                
+                </div>
+                <i onclick="fecharChat()" class="fas fa-window-close fechar"></i>    
+            </div>
+            
+            <div class="config">
+                <p class="configu"><i class="fas fa-sliders-h"></i>Configurações</p>
+                <p><i class="fas fa-sign-out-alt"></i>Sair da Conta</p>
+            </div>
+
+            <div class="rank">
+
+            </div>
+
+            <div class="bg-video">
+                <video muted loop autoplay 
+                class="vd" >
+                    <source src="imagens/4K_60FPS Reyna Animated Wallpaper - Valorant Fanart.mp4" type="video/mp4" >
+                </video>
+            </div>
+            
+        
+           
+
         </section>
     </main>
     <script>window.FontAwesomeConfig ={searchPseudoElements: true}</script>

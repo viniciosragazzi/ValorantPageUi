@@ -14,14 +14,15 @@
     src: url(../fontes/ValorantFont.ttf);
 }
 @import url('https://fonts.googleapis.com/css2?family=DM + Mono&display=swap');
-body{
+body  {
     width: 100%;
     height: 100vh;
-    background-color: #c22330;
+    background-color: #491E5A;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: 0.3s;
     main{
         width: 1200px;
         height: 600px;
@@ -31,7 +32,7 @@ body{
         border-radius: 20px;
 
             section{
-
+                
                 &.login{
                     width: 35%;
                     height: 100%;
@@ -168,8 +169,8 @@ body{
                    
                 }
                 &.registro{
-                    width: 400px;
-                    height: 500px;
+                    width: 600px;
+                    height: 600px;
                     display: flex;
                     margin-left: 400px;
                     flex-direction: column;
@@ -367,14 +368,17 @@ body{
                         transition: 1s;
 
                         .text{
+                            
                             h1{
                                 font-size: 200px;
                                 margin-left: 156px;
                                 margin-top: 189px;
                                 animation: surgir 3s , pulsar 5s infinite ;
+                                display: flex;
+                                
                                 color:#ffffff ;
                                 font-family: Valorant;
-
+                               
                                 &:hover{
                                     color:#ff8b8b ;
                                     cursor: pointer;
@@ -386,10 +390,344 @@ body{
                                     content: "\f167";
                                     color: #cccfe9;
                                   }
+                                
+                            }
+                        }
+                        
+                    }
+                   
+                }
+
+                &.tela-game{
+                    width: 100%;
+                    height: 100%;
+                  
+                    transition: 0.3s ease-in-out;
+                    display: flex;
+                    //animation: surgir 3s ;
+                    overflow: hidden;
+                    
+                    flex-direction: column; 
+                    
+                    .bg-video{
+                        width: 100%;
+                        height: 100%;
+                        z-index: 5;
+                        transition: 0.3s ease-in-out;
+                        
+                        .vd{
+                            width: 88vw;
+                            position: relative;
+                            bottom: 40px;
+                            
+                            transition: 0.3s ease-in-out;
+                        
+                        }
+                    }
+                    header{
+                        width: 87.9vw;
+                        height: 40px;
+                        background-color: #380b4980;
+                        z-index: 999;
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 1px solid #8c619c;
+
+                        .area-logom{
+                            padding-left: 5px;
+                            padding-top: 2px;
+                            display: flex;
+                            cursor: pointer;
+                            img{
+                                width: 35px;
+                            }
+                        }
+                         .area-logo2{
+                            padding-left: 5px;
+                            padding-top: 2px;
+                            display: none;
+                            cursor: pointer;
+                            img{
+                                width: 35px;
+                            }
+                        }
+                        .area-menu{
+                            .ul-menu{
+                                display: flex;
+                               
+                                margin-left: 134px;
+                                .menu-item{
+                                    list-style: none;
+                                    margin-left: 50px;
+                                    &.jogar{
+                                        width: 250px;
+                                        
+                                        border-top: 70px solid #6C2A84;
+                                        border-left: 50px solid transparent;
+                                        border-right: 50px solid transparent;
+                                        height: 0;
+                                        position: relative;
+                                        top: -31px;
+
+                                            a{
+                                                font-size: 20px;
+                                                font-weight: 500;
+                                                position: relative;
+                                                bottom: 38px;
+                                                padding-right: 5px;
+                                                font-family: Valorant;
+                                                &:hover{
+                                                    color: #280135;
+                                                    
+                                                }
+                                            }       
+                                    }
+                                    .menu-link{
+                                        font-size: 10px;
+                                        color: white;
+                                        line-height: 40px;
+                                        text-decoration: none;
+                                        font-weight: 500;
+                                        transition: 0.5s;
+
+                                        &:hover{
+                                            color: #ce96e2;
+                                            
+                                        }
+                                      
+                                    }
+                                }
+                            }
+                       
+                        }
+                        .area-dinheiro{
+                            display: flex;
+                            flex-direction: row;
+                            p{
+                                color: white;
+                                padding-left: 25px;
+                                line-height: 40px;
+                                font-size: 13px;
+
+                                img{
+                                    width: 15px;
+                                }
+                               
+                            }
+                         }
+                         .area-social{
+                            position: relative;
+                            right: -25px;
+                             p{
+                                 line-height: 40px;
+                                 color: white;
+                                 cursor: pointer;
+                                 animation: surgir 2s;
+                                 text-decoration: none;
+                                 &:hover{
+                                    color: #dc99f5;
+                                 }
+                                 &.pp2{
+                                    display: none;
+                                    padding-top: 10px;
+                                    font-size: 20px;
+                                    padding-right: 50px;
+                                    animation: surgir 2s;
+                                    
+                                }
+                                 i{
+                                     color: #af5fcc;
+                                    
+                                     padding-right: 5px;
+                                   
+                                 }
+                             }
+                         }
+
+                    }
+                
+                    .social-lateral{
+                        width: 200px;
+                        height: 40px;
+                        overflow: hidden;
+                        border: 2px solid  #3a014b;;
+                        margin-right: 0px;
+                        background-color: #501462;
+                        z-index: 6;
+                        animation: surgir 1s;
+                        flex-direction: column;
+                        position: absolute;
+                        right:83px;
+                        transition: 0.5s;
+                        justify-content: start;
+                        display: none;
+                        
+                            .area-usuario{
+                                
+                                width:200px ;
+                                height: 40px;
+                                background-color: #6C2A84;
+                                text-align: center;
+                                display: flex;
+                                border: 1px solid  #3a014b;
+                                .area-foto-usuario{
+                                    width: 40px;
+                                    height: 40px;
+                                    background-color: #310b3f;
+                                }
+                                .info-usuario{
+                                    background-color: #450B59;
+                                   width: 160px;
+
+                                    display: flex;
+                                    flex-direction: column;
+                                    position: relative;
+                                    p{
+                                        color: white;
+                                        font-size: 10px;
+                                        margin-bottom: 5px;
+                                        font-weight: 700;
+
+                                        &.status-pessoa{
+                                            font-size: 8px;
+                                            color: rgb(5, 190, 5);
+
+                                            &.oc{
+                                                color: rgb(172, 66, 233);
+                                            }
+                                            &.in{
+                                                color: rgb(132, 147, 160);
+                                            }
+                                            &.np{
+                                                color: rgb(122, 5, 231);
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                            .divisao{
+                                justify-self: flex-start;
+                                width: 200px;
+                                height: 30px;
+                                background-color:#1f0029; 
+                                color: white;
+                                padding-top: 5px;
+                                margin-bottom: 0;
+                                font-size: 12px;
+
+                                span{
+                                    color: rgb(219, 183, 226);
+                                    position: absolute;
+                                    left: 35px;
+                                    font-size: 14px;
+                                }
+                            }
+                            .divisao2{
+                                justify-self: flex-start;
+                                width: 200px;
+                                height: 30px;
+                                background-color:#1f0029; 
+                                color: white;
+                                padding-top: 5px;
+                                margin-bottom: 0;
+                                font-size: 12px;
+
+                                span{
+                                    color: rgb(219, 183, 226);
+                                    position: absolute;
+                                    left: 20px;
+                                    font-size: 14px;
+                                }
+                            }
+                        
+                        
+                    }
+                    .chat{
+                        width: 400px;
+                        height: 20px;
+                        position: fixed;
+                        background-color: rgba(79, 1, 151, 0.295);
+                        bottom: 33px;
+                        z-index: 99;
+                        transition: 0.3s;
+                        border-radius: 2px;
+                       
+                        .nome-chat{
+                            display: flex;
+                            justify-content: space-between;
+                            
+                            cursor: pointer;
+                            padding-left: 5px;
+                            padding-right: 5px;
+                            color: rgb(238, 162, 253);
+                            
+                            i{
+                                transform: rotate(180deg);
+                                margin-bottom: 18px;
+                            }
+                          
+                        }
+                        p{
+                            line-height: 20px;
+                            font-size: 10PX;
+                        }
+                        i{
+                            &.fechar{
+                                display: none;
+                                color: white;
+                                position: absolute;
+                                right: 0px;
+                                top: 0;
+                                cursor: pointer;
+
+                                &:active{
+                                    color: #a412da;
+                                }
                             }
                         }
                     }
-                   
+                    .config{
+                        width: 200px;
+                        height: 80px;
+                        background-color: #5A0790;
+                        position: absolute;
+                        top: -5px;
+                       
+                        display: none;
+                        left: 105px;
+                        z-index: 9999;
+                        transition: 0.5s;
+                        animation: surgir 1s;
+                        flex-direction: column;
+
+                        p{
+                            color: white;
+                            line-height: 40px;
+                            margin-bottom: 0;
+                            cursor: pointer;
+                            i{
+                                padding-right: 6px;
+                            }
+                            &:hover{
+                                background-color: #6d1092;
+                                color:#cc95e7 ;
+                            }
+                            &.configu{
+                                border-bottom: 1px solid #3B0C4D;
+                               
+                            }
+                            }
+                    }
+                    .rank{
+                        width: 300px;
+                        height: 50px;
+                        position: absolute;
+                        top: 130px;
+                        left: 200px;
+                        background-color:#541179 ;
+                        z-index: 9999;
+                    }
                 }
             }
     
@@ -399,6 +737,7 @@ body{
 .toggleMenu {
     margin-left: 0px !important;
 }
+
 @keyframes troca{
     0%{
         background-color: #0f1923;
@@ -439,3 +778,8 @@ body{
     
 }
 }
+
+#social-check:checked  * .social-lateral{
+    background-color: #960713;;
+}
+  

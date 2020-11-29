@@ -20,7 +20,7 @@
 body {
   width: 100%;
   height: 100vh;
-  background-color: #c22330;
+  background-color: #491E5A;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,6 +31,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 body main {
@@ -263,8 +265,8 @@ body main section.login .area-inferior .area-regis p {
 }
 
 body main section.registro {
-  width: 400px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,6 +583,9 @@ body main section.back .iniciar-bg .text h1 {
   margin-top: 189px;
   -webkit-animation: surgir 3s , pulsar 5s infinite;
           animation: surgir 3s , pulsar 5s infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #ffffff;
   font-family: Valorant;
 }
@@ -595,6 +600,389 @@ body main section.back .iniciar-bg .text h1:after {
   font-weight: 400;
   content: "\f167";
   color: #cccfe9;
+}
+
+body main section.tela-game {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main section.tela-game .bg-video {
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+body main section.tela-game .bg-video .vd {
+  width: 88vw;
+  position: relative;
+  bottom: 40px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+body main section.tela-game header {
+  width: 87.9vw;
+  height: 40px;
+  background-color: #380b4980;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #8c619c;
+}
+
+body main section.tela-game header .area-logom {
+  padding-left: 5px;
+  padding-top: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+body main section.tela-game header .area-logom img {
+  width: 35px;
+}
+
+body main section.tela-game header .area-logo2 {
+  padding-left: 5px;
+  padding-top: 2px;
+  display: none;
+  cursor: pointer;
+}
+
+body main section.tela-game header .area-logo2 img {
+  width: 35px;
+}
+
+body main section.tela-game header .area-menu .ul-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 134px;
+}
+
+body main section.tela-game header .area-menu .ul-menu .menu-item {
+  list-style: none;
+  margin-left: 50px;
+}
+
+body main section.tela-game header .area-menu .ul-menu .menu-item.jogar {
+  width: 250px;
+  border-top: 70px solid #6C2A84;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  position: relative;
+  top: -31px;
+}
+
+body main section.tela-game header .area-menu .ul-menu .menu-item.jogar a {
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  bottom: 38px;
+  padding-right: 5px;
+  font-family: Valorant;
+}
+
+body main section.tela-game header .area-menu .ul-menu .menu-item.jogar a:hover {
+  color: #280135;
+}
+
+body main section.tela-game header .area-menu .ul-menu .menu-item .menu-link {
+  font-size: 10px;
+  color: white;
+  line-height: 40px;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body main section.tela-game header .area-menu .ul-menu .menu-item .menu-link:hover {
+  color: #ce96e2;
+}
+
+body main section.tela-game header .area-dinheiro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body main section.tela-game header .area-dinheiro p {
+  color: white;
+  padding-left: 25px;
+  line-height: 40px;
+  font-size: 13px;
+}
+
+body main section.tela-game header .area-dinheiro p img {
+  width: 15px;
+}
+
+body main section.tela-game header .area-social {
+  position: relative;
+  right: -25px;
+}
+
+body main section.tela-game header .area-social p {
+  line-height: 40px;
+  color: white;
+  cursor: pointer;
+  -webkit-animation: surgir 2s;
+          animation: surgir 2s;
+  text-decoration: none;
+}
+
+body main section.tela-game header .area-social p:hover {
+  color: #dc99f5;
+}
+
+body main section.tela-game header .area-social p.pp2 {
+  display: none;
+  padding-top: 10px;
+  font-size: 20px;
+  padding-right: 50px;
+  -webkit-animation: surgir 2s;
+          animation: surgir 2s;
+}
+
+body main section.tela-game header .area-social p i {
+  color: #af5fcc;
+  padding-right: 5px;
+}
+
+body main section.tela-game .social-lateral {
+  width: 200px;
+  height: 40px;
+  overflow: hidden;
+  border: 2px solid  #3a014b;
+  margin-right: 0px;
+  background-color: #501462;
+  z-index: 6;
+  -webkit-animation: surgir 1s;
+          animation: surgir 1s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  right: 83px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  display: none;
+}
+
+body main section.tela-game .social-lateral .area-usuario {
+  width: 200px;
+  height: 40px;
+  background-color: #6C2A84;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid  #3a014b;
+}
+
+body main section.tela-game .social-lateral .area-usuario .area-foto-usuario {
+  width: 40px;
+  height: 40px;
+  background-color: #310b3f;
+}
+
+body main section.tela-game .social-lateral .area-usuario .info-usuario {
+  background-color: #450B59;
+  width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+body main section.tela-game .social-lateral .area-usuario .info-usuario p {
+  color: white;
+  font-size: 10px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+body main section.tela-game .social-lateral .area-usuario .info-usuario p.status-pessoa {
+  font-size: 8px;
+  color: #05be05;
+}
+
+body main section.tela-game .social-lateral .area-usuario .info-usuario p.status-pessoa.oc {
+  color: #ac42e9;
+}
+
+body main section.tela-game .social-lateral .area-usuario .info-usuario p.status-pessoa.in {
+  color: #8493a0;
+}
+
+body main section.tela-game .social-lateral .area-usuario .info-usuario p.status-pessoa.np {
+  color: #7a05e7;
+}
+
+body main section.tela-game .social-lateral .divisao {
+  justify-self: flex-start;
+  width: 200px;
+  height: 30px;
+  background-color: #1f0029;
+  color: white;
+  padding-top: 5px;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+body main section.tela-game .social-lateral .divisao span {
+  color: #dbb7e2;
+  position: absolute;
+  left: 35px;
+  font-size: 14px;
+}
+
+body main section.tela-game .social-lateral .divisao2 {
+  justify-self: flex-start;
+  width: 200px;
+  height: 30px;
+  background-color: #1f0029;
+  color: white;
+  padding-top: 5px;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+body main section.tela-game .social-lateral .divisao2 span {
+  color: #dbb7e2;
+  position: absolute;
+  left: 20px;
+  font-size: 14px;
+}
+
+body main section.tela-game .chat {
+  width: 400px;
+  height: 20px;
+  position: fixed;
+  background-color: rgba(79, 1, 151, 0.295);
+  bottom: 33px;
+  z-index: 99;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+body main section.tela-game .chat .nome-chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #eea2fd;
+}
+
+body main section.tela-game .chat .nome-chat i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-bottom: 18px;
+}
+
+body main section.tela-game .chat p {
+  line-height: 20px;
+  font-size: 10PX;
+}
+
+body main section.tela-game .chat i.fechar {
+  display: none;
+  color: white;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  cursor: pointer;
+}
+
+body main section.tela-game .chat i.fechar:active {
+  color: #a412da;
+}
+
+body main section.tela-game .config {
+  width: 200px;
+  height: 80px;
+  background-color: #5A0790;
+  position: absolute;
+  top: -5px;
+  display: none;
+  left: 105px;
+  z-index: 9999;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation: surgir 1s;
+          animation: surgir 1s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main section.tela-game .config p {
+  color: white;
+  line-height: 40px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+body main section.tela-game .config p i {
+  padding-right: 6px;
+}
+
+body main section.tela-game .config p:hover {
+  background-color: #6d1092;
+  color: #cc95e7;
+}
+
+body main section.tela-game .config p.configu {
+  border-bottom: 1px solid #3B0C4D;
+}
+
+body main section.tela-game .rank {
+  width: 300px;
+  height: 50px;
+  position: absolute;
+  top: 130px;
+  left: 200px;
+  background-color: #541179;
+  z-index: 9999;
 }
 
 .toggleMenu {
@@ -669,5 +1057,9 @@ body main section.back .iniciar-bg .text h1:after {
   100% {
     font-size: 200px;
   }
+}
+
+#social-check:checked * .social-lateral {
+  background-color: #960713;
 }
 /*# sourceMappingURL=main.css.map */
