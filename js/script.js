@@ -23,7 +23,7 @@ let arealogom = document.querySelector(".area-logom")
 let rank = document.querySelector(".rank")
 let imgg = document.querySelector(".imgrank")
 let rankimg = document.querySelector(".img-rank")
-
+const botaoj = document.querySelector(".jogar")
 function regis(){
    
     regi.style.marginLeft = '0px';
@@ -153,3 +153,4 @@ function esconderRank(){
     rank.style.display = 'none'
     rank.style.transform = "translateX(400px)"
 }
+

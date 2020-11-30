@@ -20,7 +20,7 @@
 body {
   width: 100%;
   height: 100vh;
-  background-color: #491E5A;
+  background-color: #cf093b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -607,9 +607,9 @@ body main section.tela-game {
   height: 100%;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+  -webkit-animation: surgir 3s;
+          animation: surgir 3s;
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -703,7 +703,7 @@ body main section.tela-game header .area-menu .ul-menu .menu-item.jogar a {
 }
 
 body main section.tela-game header .area-menu .ul-menu .menu-item.jogar a:hover {
-  color: #280135;
+  color: #dcacec;
 }
 
 body main section.tela-game header .area-menu .ul-menu .menu-item .menu-link {
