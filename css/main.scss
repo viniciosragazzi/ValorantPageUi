@@ -468,9 +468,7 @@ body  {
                                         height: 0;
                                         position: relative;
                                         top: -31px;
-                                          &:hover{
-                                           
-                                          }
+                                         
                                             a{
                                                 font-size: 20px;
                                                 font-weight: 500;
@@ -478,6 +476,7 @@ body  {
                                                 bottom: 38px;
                                                 padding-right: 5px;
                                                 font-family: Valorant;
+                                                cursor: pointer;
                                                 &:hover{
                                                     color: #dcacec;
                                                     
@@ -783,7 +782,7 @@ body  {
                     }
                     .rank-img{
                         position: absolute;
-                        z-index: 9999;
+                        z-index: 9995;
                         top: 250px;
                         right: 250px;
                         
@@ -791,6 +790,7 @@ body  {
                             width: 100px;
                             margin-right: 50px;
                             cursor: pointer;
+                           
                             animation:  surgir 2s;
 
                         &.img-rank{
@@ -801,6 +801,26 @@ body  {
                             animation:  surgir 2s;
                             display: none;
                         }
+                        }
+                    }
+                    .tela-jogar{
+                        width: 60vw ;
+                        height: 0;
+                        background-color: rgba(79, 1, 151, 0.664);
+                        position: absolute;
+                        z-index: 9998;
+                        display: flex;
+                        transition: 0.5s;
+                        align-self: center;
+                        top: 75px;
+                        border-radius: 0px 0px 50px 50px;
+                        justify-content: center;align-items: center;
+                        h1{
+                            color: white;
+                            font-size: 80px;
+                            font-family: Valorant;
+                            animation: surgir 3s, trocarcor 1s infinite;
+                            display: none;
                         }
                     }
                 }
@@ -837,7 +857,17 @@ body  {
         opacity: 1;
     }
 }
-
+@keyframes trocarcor{
+    0%{
+        color: white;
+    }
+    50%{
+        color: #a662d9;
+    }
+    100%{
+        color: white;
+    }
+} 
 @keyframes pulsar {
     0%{
         font-size:200px ;
@@ -864,5 +894,9 @@ body  {
     body main section.tela-game .config {
         
         top: 40px;
+    }
+    body main section.tela-game .tela-jogar {
+      
+        top: 123px;
     }
 }

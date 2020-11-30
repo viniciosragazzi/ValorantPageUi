@@ -700,6 +700,7 @@ body main section.tela-game header .area-menu .ul-menu .menu-item.jogar a {
   bottom: 38px;
   padding-right: 5px;
   font-family: Valorant;
+  cursor: pointer;
 }
 
 body main section.tela-game header .area-menu .ul-menu .menu-item.jogar a:hover {
@@ -1052,7 +1053,7 @@ body main section.tela-game .rank .proximo-rank img {
 
 body main section.tela-game .rank-img {
   position: absolute;
-  z-index: 9999;
+  z-index: 9995;
   top: 250px;
   right: 250px;
 }
@@ -1072,6 +1073,38 @@ body main section.tela-game .rank-img img.img-rank {
   right: 236px;
   -webkit-animation: surgir 2s;
           animation: surgir 2s;
+  display: none;
+}
+
+body main section.tela-game .tela-jogar {
+  width: 60vw;
+  height: 0;
+  background-color: rgba(79, 1, 151, 0.664);
+  position: absolute;
+  z-index: 9998;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -ms-flex-item-align: center;
+      align-self: center;
+  top: 75px;
+  border-radius: 0px 0px 50px 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section.tela-game .tela-jogar h1 {
+  color: white;
+  font-size: 80px;
+  font-family: Valorant;
+  -webkit-animation: surgir 3s, trocarcor 1s infinite;
+          animation: surgir 3s, trocarcor 1s infinite;
   display: none;
 }
 
@@ -1125,6 +1158,30 @@ body main section.tela-game .rank-img img.img-rank {
   }
 }
 
+@-webkit-keyframes trocarcor {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #a662d9;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes trocarcor {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #a662d9;
+  }
+  100% {
+    color: white;
+  }
+}
+
 @-webkit-keyframes pulsar {
   0% {
     font-size: 200px;
@@ -1155,6 +1212,9 @@ body main section.tela-game .rank-img img.img-rank {
   }
   body main section.tela-game .config {
     top: 40px;
+  }
+  body main section.tela-game .tela-jogar {
+    top: 123px;
   }
 }
 /*# sourceMappingURL=main.css.map */

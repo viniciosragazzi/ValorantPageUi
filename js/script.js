@@ -18,12 +18,15 @@ let fechar = document.querySelector(".fechar")
 let down = document.querySelector(".down")
 let nc = document.querySelector(".nome-chat")
 let con = document.querySelector(".config")
+let configu = document.querySelector(".configu")
 let arealogo2 = document.querySelector(".area-logo2")
 let arealogom = document.querySelector(".area-logom")
 let rank = document.querySelector(".rank")
 let imgg = document.querySelector(".imgrank")
 let rankimg = document.querySelector(".img-rank")
-const botaoj = document.querySelector(".jogar")
+let telaJogar  = document.querySelector(".tela-jogar")
+let breve = document.querySelector(".breve")
+
 function regis(){
    
     regi.style.marginLeft = '0px';
@@ -90,10 +93,8 @@ function clicksocial(){
     ptexto.style.display = "none";
     picon.style.display = "flex"
     socialL.style.display = "flex"
-    imgg.style.display = "block";
-    rankimg.style.display = "none"
-    rank.style.display = 'none'
-    rank.style.transform = "translateX(400px)"
+    esconderRank()
+    clicarInicio()
 }
 
 function fecharsocial(){
@@ -125,6 +126,7 @@ function clickLogo(){
     con.style.transform = "translateY(90px)"
     arealogom.style.display = "none"
     arealogo2.style.display = "flex"
+    clicarInicio();
 }
 function fecharConfig(){
     con.style.display = "none"
@@ -138,13 +140,7 @@ function mostrarRank(){
     rankimg.style.display = "block"
     rank.style.display = 'flex'
     rank.style.transform = "translateX(-400px)"
-    socialL.style.transform = "translateY(0)";
-    socialL.style.width = "100px"; 
-    socialL.style.height = "40px"; 
-    ptexto.style.display = "flex";
-    picon.style.display = "none"
-    icos.style.paddingTop="12px"
-    socialL.style.display = "none"
+    fecharsocial()
 }
 
 function esconderRank(){
@@ -154,3 +150,15 @@ function esconderRank(){
     rank.style.transform = "translateX(400px)"
 }
 
+function clicarJogar(){
+    telaJogar.style.height = "400px";
+    configu.style.zindex = "9999";
+    breve.style.display = "flex";
+    esconderRank();
+    fecharsocial();
+    fecharConfig();
+}
+function clicarInicio(){
+    telaJogar.style.height = "0";
+    breve.style.display = "none";
+}
