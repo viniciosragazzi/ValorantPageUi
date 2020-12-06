@@ -1,4 +1,4 @@
-# Tela inicial e Menu na WEV - Valorant
+# Tela inicial e Menu na WEB - Valorant
 
 
 
